@@ -1,7 +1,7 @@
-import time
 import pytest
 import allure
 import page
+import time
 
 from playwright.sync_api import sync_playwright
 
@@ -26,7 +26,7 @@ def test_vwo_login():
 
     # write your code here
 
-    time.sleep(10)
+    time.sleep(5)
 
     # dispose context once it is no longer needed
     context.close()
