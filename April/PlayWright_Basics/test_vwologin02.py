@@ -6,6 +6,7 @@ from playwright.sync_api import Page, expect, sync_playwright
 # Page - class -> help you interact with html
 #expect - validate the message expected result == actual result
 # validation -> pytest - assert also available
+# breakpoint()
 
 def test_login():
 
@@ -15,6 +16,7 @@ def test_login():
     page = browser.new_page()
     #2.) code interaction with Html page
     page.goto("https://app.vwo.com")
+    breakpoint()
 
     #3.) Validation
     expect(page).to_have_title(" Login - VWO.COM")
